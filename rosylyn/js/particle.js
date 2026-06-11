@@ -60,7 +60,7 @@ class Particle {
 }
 
 // 导航栏粒子初始化（给 navbar.js 调用）
-export function initNavParticle() {
+function initNavParticle() {
     navDom = document.querySelector('.navbar');
     navCanvas = document.getElementById("nav-particle");
     if (!navCanvas || !navDom) return;
@@ -106,7 +106,7 @@ export function initNavParticle() {
 }
 
 // 页脚粒子初始化（给 footer.js 调用）
-export function initFooterParticle() {
+function initFooterParticle() {
     footerDom = document.querySelector('footer');
     footerCanvas = document.getElementById("footer-particle");
     if (!footerCanvas || !footerDom) return;
