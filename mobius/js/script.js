@@ -126,22 +126,28 @@ function renderResume() {
                 const degree = info[3] ?? '';
                 const phone = info[4] ?? '';
                 const email = info[5] ?? '';
-                document.getElementById('info').innerHTML = `
-                    <h3>${langTxt.infoTitle}</h3>
-                    <div class="info-box">
-                        <img src="images/1.jpg" alt="avatar" class="avatar">
-                        <p><strong>${langTxt.name}：</strong>${name}</p>
-                        <p><strong>${langTxt.birth}：</strong>${birth}</p>
-                        <p><strong>${langTxt.major}：</strong>${major}</p>
-                        <p><strong>${langTxt.degree}：</strong>${degree}</p>
-                        <p><strong>${langTxt.phone}：</strong>${phone}</p>
-                        <p><strong>${langTxt.email}：</strong>${email}</p>
-                    </div>
-                `;
-                document.getElementById('info').style.display = 'block';
+                const infoDom = document.getElementById('info');
+                if (infoDom) {//图片等以后加<img src="images/1.jpg" alt="avatar" class="avatar">
+                    infoDom.innerHTML = `
+                        <h3>${langTxt.infoTitle}</h3>
+                        <div class="info-box">
+                            
+                            <p><strong>${langTxt.name}：</strong>${name}</p>
+                            <p><strong>${langTxt.birth}：</strong>${birth}</p>
+                            <p><strong>${langTxt.major}：</strong>${major}</p>
+                            <p><strong>${langTxt.degree}：</strong>${degree}</p>
+                            <p><strong>${langTxt.phone}：</strong>${phone}</p>
+                            <p><strong>${langTxt.email}：</strong>${email}</p>
+                        </div>
+                    `;
+                    infoDom.style.display = 'block';
+                }
             } else {
-                document.getElementById('info').innerHTML = '';
-                document.getElementById('info').style.display = 'none';
+                const infoDom = document.getElementById('info');
+                if (infoDom) {
+                    infoDom.innerHTML = '';
+                    infoDom.style.display = 'none';
+                }
             }
 
             if (moduleData.skill.length > 0) {
@@ -152,11 +158,17 @@ function renderResume() {
                     skillArr.forEach(item => skillHtml += `<li>${item.trim()}</li>`);
                     skillHtml += `</ol>`;
                 });
-                document.getElementById('skill').innerHTML = skillHtml;
-                document.getElementById('skill').style.display = 'block';
+                const skillDom = document.getElementById('skill');
+                if (skillDom) {
+                    skillDom.innerHTML = skillHtml;
+                    skillDom.style.display = 'block';
+                }
             } else {
-                document.getElementById('skill').innerHTML = '';
-                document.getElementById('skill').style.display = 'none';
+                const skillDom = document.getElementById('skill');
+                if (skillDom) {
+                    skillDom.innerHTML = '';
+                    skillDom.style.display = 'none';
+                }
             }
 
             if (moduleData.edu.length > 0) {
@@ -176,11 +188,17 @@ function renderResume() {
                     </div>
                     `;
                 });
-                document.getElementById('edu').innerHTML = eduHtml;
-                document.getElementById('edu').style.display = 'block';
+                const eduDom = document.getElementById('edu');
+                if (eduDom) {
+                    eduDom.innerHTML = eduHtml;
+                    eduDom.style.display = 'block';
+                }
             } else {
-                document.getElementById('edu').innerHTML = '';
-                document.getElementById('edu').style.display = 'none';
+                const eduDom = document.getElementById('edu');
+                if (eduDom) {
+                    eduDom.innerHTML = '';
+                    eduDom.style.display = 'none';
+                }
             }
 
             if (moduleData.practice.length > 0) {
@@ -202,11 +220,17 @@ function renderResume() {
                     pracList.forEach(item => pracHtml += `<li>${item.trim()}</li>`);
                     pracHtml += `</ol></div>`;
                 });
-                document.getElementById('practice').innerHTML = pracHtml;
-                document.getElementById('practice').style.display = 'block';
+                const pracDom = document.getElementById('practice');
+                if (pracDom) {
+                    pracDom.innerHTML = pracHtml;
+                    pracDom.style.display = 'block';
+                }
             } else {
-                document.getElementById('practice').innerHTML = '';
-                document.getElementById('practice').style.display = 'none';
+                const pracDom = document.getElementById('practice');
+                if (pracDom) {
+                    pracDom.innerHTML = '';
+                    pracDom.style.display = 'none';
+                }
             }
 
             if (moduleData.project.length > 0) {
@@ -229,11 +253,17 @@ function renderResume() {
                     descList.forEach(txt => projHtml += `<li>${txt.trim()}</li>`);
                     projHtml += `</ol></div><br><br>`;
                 });
-                document.getElementById('project').innerHTML = projHtml;
-                document.getElementById('project').style.display = 'block';
+                const projDom = document.getElementById('project');
+                if (projDom) {
+                    projDom.innerHTML = projHtml;
+                    projDom.style.display = 'block';
+                }
             } else {
-                document.getElementById('project').innerHTML = '';
-                document.getElementById('project').style.display = 'none';
+                const projDom = document.getElementById('project');
+                if (projDom) {
+                    projDom.innerHTML = '';
+                    projDom.style.display = 'none';
+                }
             }
 
             if (moduleData.competition.length > 0) {
@@ -256,11 +286,17 @@ function renderResume() {
                     descList.forEach(txt => compHtml += `<li>${txt.trim()}</li>`);
                     compHtml += `</ol></div><br><br>`;
                 });
-                document.getElementById('competition').innerHTML = compHtml;
-                document.getElementById('competition').style.display = 'block';
+                const compDom = document.getElementById('competition');
+                if (compDom) {
+                    compDom.innerHTML = compHtml;
+                    compDom.style.display = 'block';
+                }
             } else {
-                document.getElementById('competition').innerHTML = '';
-                document.getElementById('competition').style.display = 'none';
+                const compDom = document.getElementById('competition');
+                if (compDom) {
+                    compDom.innerHTML = '';
+                    compDom.style.display = 'none';
+                }
             }
 
             if (moduleData.campus.length > 0) {
@@ -283,11 +319,17 @@ function renderResume() {
                     descList.forEach(txt => campHtml += `<li>${txt.trim()}</li>`);
                     campHtml += `</ol></div><br><br>`;
                 });
-                document.getElementById('campus').innerHTML = campHtml;
-                document.getElementById('campus').style.display = 'block';
+                const campDom = document.getElementById('campus');
+                if (campDom) {
+                    campDom.innerHTML = campHtml;
+                    campDom.style.display = 'block';
+                }
             } else {
-                document.getElementById('campus').innerHTML = '';
-                document.getElementById('campus').style.display = 'none';
+                const campDom = document.getElementById('campus');
+                if (campDom) {
+                    campDom.innerHTML = '';
+                    campDom.style.display = 'none';
+                }
             }
 
             if (moduleData.works.length > 0) {
@@ -303,11 +345,17 @@ function renderResume() {
                 });
                 workHtml += `</ol>
                 <p style="margin-top:12px;color:#666;font-size:14px;">${langTxt.workTip}</p>`;
-                document.getElementById('works').innerHTML = workHtml;
-                document.getElementById('works').style.display = 'block';
+                const workDom = document.getElementById('works');
+                if (workDom) {
+                    workDom.innerHTML = workHtml;
+                    workDom.style.display = 'block';
+                }
             } else {
-                document.getElementById('works').innerHTML = '';
-                document.getElementById('works').style.display = 'none';
+                const workDom = document.getElementById('works');
+                if (workDom) {
+                    workDom.innerHTML = '';
+                    workDom.style.display = 'none';
+                }
             }
         })
         .catch(err => {
@@ -315,5 +363,3 @@ function renderResume() {
             alert(langMap[currentLang].loadErr);
         });
 }
-
-window.onload = renderResume;

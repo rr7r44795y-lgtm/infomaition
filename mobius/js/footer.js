@@ -25,4 +25,5 @@ function loadFooter() {
         </div>
     `;
     document.body.appendChild(footer);
+    initFooterParticle();
 }

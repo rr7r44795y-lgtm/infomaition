@@ -127,11 +127,11 @@ function renderResume() {
                 const phone = info[4] ?? '';
                 const email = info[5] ?? '';
                 const infoDom = document.getElementById('info');
-                if (infoDom) {
+                if (infoDom) {//图片等以后加<img src="images/1.jpg" alt="avatar" class="avatar">
                     infoDom.innerHTML = `
                         <h3>${langTxt.infoTitle}</h3>
                         <div class="info-box">
-                            <img src="images/1.jpg" alt="avatar" class="avatar">
+                            
                             <p><strong>${langTxt.name}：</strong>${name}</p>
                             <p><strong>${langTxt.birth}：</strong>${birth}</p>
                             <p><strong>${langTxt.major}：</strong>${major}</p>
