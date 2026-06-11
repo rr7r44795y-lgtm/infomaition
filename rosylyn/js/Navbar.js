@@ -57,4 +57,5 @@ function loadNavbar() {
         localStorage.setItem("resumeLang", curr);
         renderResume();
     });
+    initNavParticle();
 }
