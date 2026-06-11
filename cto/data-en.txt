@@ -1,0 +1,27 @@
+// 1. Personal Info: Name|Birth Date|Major|Degree|Phone|Email
+INFO_Rosylyn|Nov 2004|Cryptography Science and Technology|Undergraduate|18289340091|1740144514@qq.com
+
+// 2. Skills (Separate multiple items with @@)
+SKILL_Frontend: Next.js, React, Tailwind CSS, TypeScript, Responsive Layout, Component-based Development@@Backend: Python, FastAPI, SQL/PostgreSQL, API Design, Exception Handling, CORS Debugging@@Others: Unity2D, Office Suite, PowerPoint/Excel/Word
+
+// 3. Education: Period|University|Major|Core Courses
+EDU_Sep 2023 - Jun 2026|Hainan University|Cryptography Science and Technology|Applied Cryptography, Cryptanalysis
+
+// 4. Internship (PRAC_)
+//PRAC_
+
+// 5. Projects
+PRO_Dec 2025 - Jan 2026|iteraforge LLC|Tech Lead|Served as technical lead of the startup team, responsible for end-to-end architecture design and full-stack development from scratch@@Led backend construction with Python/FastAPI, Supabase database design and frontend implementation using Next.js/TSX@@Developed core modules including user authentication and data management to ensure stable operation and iterative updates. Core features and local deployment are finished, pending transformation.
+
+PRO_Jan 2026 - Mar 2026|Personal Unity2D Project|Project Lead|Designed core gameplay, logic and basic scenes for a 2D game; implemented gameplay control, interactive systems and UI with Unity2D@@Built game packages and released a basic Demo on TapTap, gaining full experience of game development and release workflow.
+
+PRO_Apr 2026 - Jun 2026|Information Technology Center of Hainan University|Project Lead|Led the campus digitalization project, taking charge of campus software upgrade, technical solution selection and team task allocation@@Oriented requirement decomposition, API design and core module development; built the basic system framework and solved cross-platform compatibility issues. The project is now under testing and optimization for official launch.
+
+// 6. Competitions (COMP_)
+COMP_May 2021|Hainan Provincial University AI Innovation Contest|Third Prize|Comic creation project "Adventure of Free Trade Port Customs Clearance"@@Completed comic creation as a team@@Mainly responsible for theme setting, art style control and script writing.
+
+//7. Campus Activities (CAMP_)
+CAMP_2025-2026|Computer Association|President|Organized campus technical events including AI tool sharing and academic lectures, and built cross-major technical teams to plan technical roadmaps and development schedules@@Hosted tech workshops and skill training, standardized team workflows, improved members' practical engineering capabilities and promoted campus tech projects.
+
+// 7. Project Links (WORK_)
+WORK_LogiForge|https://logiforge.vercel.app@@Velyra|https://velyra.iteraforgeai.com@@Personal Unity2D Game|https://www.taptap.cn/app/832202?utm_medium=&utm_source=copy&share_id=
